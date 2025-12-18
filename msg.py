@@ -4,3 +4,7 @@ APPEAL = ('Очень приятно познакомиться {name}. Хочу
 APPEAL_1 = 'Хочу Вам предложить'
 APPEAL_2 = 'Сколько порций вы хотите?'
 APPEAL_3 = 'Так же хочу предложить Вам'
+
+MSG_TOTL = 'Общая сумма \t\t{sum}'
+MSG_DISCOUNT = 'Сумма скидки \t\t{discount}'
+MSG_TOTL_DISCOUNT = 'Сумма со скидкой \t{tota1}'
