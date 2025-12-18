@@ -3,6 +3,7 @@ from menu import MENU_2_PRICE
 import menu
 import msg
 from msg import GREETINGS, APPEAL
+import decimal
 
 multiprocessing = '***' * 11
 print(multiprocessing)
@@ -22,11 +23,12 @@ prise_1 = MENU_2_PRICE
 total_1 = prise_1 * position_1
 print(multiprocessing)
 sum = total + total_1
-discount = sum * 0.15
+discount = sum * decimal.Decimal('0.15').quantize(decimal.Decimal('0.01'))
+tota1 = sum - discount
 
-print(f'Сумма без скидки = {sum}')
-print(f'Сумма скидки = {discount}')
-print(f'К оплате = {sum - discount}')
+print(msg.MSG_TOTL.format(sum=sum))
+print(msg.MSG_DISCOUNT.format(discount=discount))
+print(msg.MSG_TOTL_DISCOUNT.format(tota1=tota1))
 print(multiprocessing)
 
 # age = input("Введите свой возраст: ").strip() # Сразу очешаем от пробелов
