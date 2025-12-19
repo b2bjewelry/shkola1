@@ -6,6 +6,7 @@ from pywebio.output import clear
 import question
 
 
+
 # Инициализируем счетчик очков
 score = 0
 #Заголовок
