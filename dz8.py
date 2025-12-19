@@ -70,4 +70,4 @@ if compare_5:
 else:
     put_error('❌ Неверно')
 
-put_warning(f'Вы ответили на {score} вопроса')
+put_warning(f'Вы ответили на {score} вопроса.')
